@@ -21,11 +21,12 @@
 .image-footer{
   border-bottom: 1px solid lightgrey;
   font-size: 3px;
+  position: relative;
 }
 
 .image-footer img{
-  width: 20%;
-  height: 20%;
+  width: 4px;
+  height: 4px;
   border-radius: 30%;
   border-color: white;
   vertical-align: top;
@@ -51,12 +52,23 @@
   display: inline-block;
 }
 
+.triangle{
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 2px 2px 0 2px;
+  border-color: #ebebeb transparent transparent transparent;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
 ul.authors{
 /*   border: 1px solid orange; */
   padding-left: 0;
   display: inline-block;
   white-space: nowrap;
-  width: 40%;
+  width: auto;
   list-style-type: none;
 }
 
